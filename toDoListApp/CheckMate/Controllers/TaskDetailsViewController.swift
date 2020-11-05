@@ -136,8 +136,21 @@ class TaskDetailsViewController: UIViewController, UITextViewDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
-        
         guard segue.identifier == "save" else { return }
+        
+        // Save to DataBase...
+        guard let title = titleTextField.text else {return}
+        guard let duedate = dueDateLabel.text else {return}
+        guard let note = notesTextView.text else {return}
+        
+        let taskInfo = TaskService.Task(title: title, dueDate: duedate, notes: note)
+        
+        TaskService.shared.uploadTask(task: taskInfo) { (error, ref) in
+            if let error = error {
+                print("DEBUG: Failed to save task with error \(error.localizedDescription)")
+                return
+            }
+        }
         
         //Set values
         let titleText = titleTextField.text!

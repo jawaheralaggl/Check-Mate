@@ -65,7 +65,7 @@ class ToDoListTableVC: UIViewController, UITableViewDelegate, UITableViewDataSou
         viewCorner.roundCorners([.bottomLeft, .bottomRight], radius: 50)
         
         //Set Title
-        title = "To-Do List"
+        title = "Check-Mate List"
         definesPresentationContext = true
         
         // Display the Search controller
