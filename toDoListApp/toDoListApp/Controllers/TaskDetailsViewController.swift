@@ -19,6 +19,7 @@ class TaskDetailsViewController: UIViewController, UITextViewDelegate {
     
     @IBOutlet weak var saveButton: UIBarButtonItem!
     
+    @IBOutlet weak var switchOfDate: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -105,6 +106,11 @@ class TaskDetailsViewController: UIViewController, UITextViewDelegate {
     // Dismiss Keyboard when Return key is pressed
     @IBAction func returnPressed(_ sender: UITextField) {
         titleTextField.resignFirstResponder()
+    }
+    
+    // Dismiss Keyboard when view is pressed
+    @IBAction func backgroundTapped(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
     }
     
     
