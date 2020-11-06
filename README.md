@@ -31,3 +31,4 @@ Allow users to create a ToDo List to meet all their needs from tasks planning to
 
 # Demo
 
+![Demo](https://github.com/jawaheralaggl/Check-Mate/blob/main/Demo.gif)
