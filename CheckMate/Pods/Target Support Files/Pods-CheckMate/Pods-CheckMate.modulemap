@@ -1,0 +1,6 @@
+framework module Pods_CheckMate {
+  umbrella header "Pods-CheckMate-umbrella.h"
+
+  export *
+  module * { export * }
+}

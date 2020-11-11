@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_toDoListAppVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_toDoListAppVersionString[];
+FOUNDATION_EXPORT double Pods_CheckMateVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_CheckMateVersionString[];
 
